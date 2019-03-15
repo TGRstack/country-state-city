@@ -5,6 +5,26 @@ test('Check for Country By Id ', () => {
   let country = csc.getCountryById(code)
   expect(country).toEqual({"id": "38", "name": "Canada", "phonecode": "1", "sortname": "CA"});
 });
+test('Check for Country By Name ', () => {
+  const name = 'Canada';
+  let country = csc.getCountryByName(name)
+  expect(country).toEqual({"id": "38", "name": "Canada", "phonecode": "1", "sortname": "CA"});
+});
+test('Check for Country By name ', () => {
+  const name = 'canada';
+  let country = csc.getCountryByName(name)
+  expect(country).toEqual({"id": "38", "name": "Canada", "phonecode": "1", "sortname": "CA"});
+});
+test('Check for Country By Sortname ', () => {
+  const sortname = 'CA';
+  let country = csc.getCountryBySortname(sortname)
+  expect(country).toEqual({"id": "38", "name": "Canada", "phonecode": "1", "sortname": "CA"});
+});
+test('Check for Country By sortname ', () => {
+  const sortname = 'ca';
+  let country = csc.getCountryBySortname(sortname)
+  expect(country).toEqual({"id": "38", "name": "Canada", "phonecode": "1", "sortname": "CA"});
+});
 
 test('Check for State By Id ', () => {
   const code = '32';

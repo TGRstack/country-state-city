@@ -8,6 +8,7 @@ Basic library for Country, State and City
 
 1. Start `meta.json` to get a country's subregion title per country
 2. Add `getStateTitleOfCountry(countryId)` for accessing meta details
+3. Add more helper functions `getCountryByName(name)`, `getCountryBySortname(sortname)` - caseINsensitive
 
 ## Versioning
 
@@ -24,10 +25,12 @@ https://github.com/hiiamrohit/Countries-States-Cities-database
 
 ### Docs
 
-getCountryById(id)
+getCountryById(id), getCountryByName(name), getCountryBySortname(sortname)
 ---------------
 
-It accepts a valid `CountryId` and   returns *Country Details*
+Respectively, each function expects a `CountryId`,  `CountryName`,  `CountrySortname` and returns *Country Details*
+
+CountryName and CountrySortname can be called case insensitively (searches are formed w/ value.toLowerCase())
 
 type: *json*
 
@@ -85,8 +88,23 @@ type: *array of json*
     "country_id": "246"
   }
 ]
-
 ```
+
+getStateTitleOfCountry(countryId)
+---------------
+
+It accepts a valid `CountryId` and returns *meta state title* as String
+
+type: *string*
+
+```js
+'Provinces'
+```
+
+```js
+'States'
+```
+
 getCitiesOfState(stateId)
 ---------------
 
