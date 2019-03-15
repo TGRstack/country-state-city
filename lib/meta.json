@@ -1,0 +1,18 @@
+[
+  {
+    "country_id": "101",
+    "subregion": "Province / Union Territory"
+  },
+  {
+    "country_id": "38",
+    "subregion": "Province"
+  },
+  {
+    "country_id": "231",
+    "subregion": "State"
+  },
+  {
+    "country_id": "230",
+    "subregion": "County"
+  }
+]

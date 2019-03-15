@@ -1,6 +1,7 @@
 var countryList = require("./lib/country.json")
 var stateList = require("./lib/state.json")
 var cityList = require("./lib/city.json")
+var metaList = require("./lib/meta.json")
 
 var country_state_city = {
 	getCountryById: function (id) {
@@ -17,6 +18,12 @@ var country_state_city = {
 			return value.country_id == countryId
 		})
 		return states.sort(compare)
+	},
+	getStateTitleOfCountry: function (countryId) {
+		var meta = metaList.find(function (value, index) {
+			return value.country_id == countryId
+		})
+		return meta.subregion
 	},
 	getCitiesOfState: function (stateId) {
 		var cities = cityList.filter(function (value, index) {

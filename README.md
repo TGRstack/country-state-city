@@ -1,15 +1,28 @@
-country-state-city
-==============================
+# country-state-city
+
 Basic library for Country, State and City
+
+## Forked from https://github.com/harpreetkhalsagtbit/country-state-city
+
+## Changes:
+
+1. Start `meta.json` to get a country's subregion title per country
+2. Add `getStateTitleOfCountry(countryId)` for accessing meta details
+
+## Versioning
+
+1. I cut a new minor version for the fork `0.2.0` from `0.1.2`
+
+## ORIGINAL
 
 Data taken from:
 
 https://github.com/hiiamrohit/Countries-States-Cities-database
 
-# Install
+### Install
 `npm i country-state-city`
 
-# Docs
+### Docs
 
 getCountryById(id)
 ---------------

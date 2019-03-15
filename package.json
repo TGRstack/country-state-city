@@ -1,19 +1,18 @@
 {
-  "name": "country-state-city",
-  "version": "0.1.2",
+  "name": "@tgrx/country-state-city",
+  "version": "0.2.0",
   "description": "Library for fetching Country, its States and Cities",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "harpreetkhalsagtbit@gmail.com",
   "license": "GPL-3.0",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harpreetkhalsagtbit/country-state-city.git"
+    "url": "git+https://github.com/TGRstack/country-state-city.git"
   },
   "husky": {
     "hooks": {
@@ -30,11 +29,17 @@
     "Filter"
   ],
   "bugs": {
-    "url": "https://github.com/harpreetkhalsagtbit/country-state-city/issues"
+    "url": "https://github.com/TGRstack/country-state-city/issues"
   },
-  "homepage": "https://github.com/harpreetkhalsagtbit/country-state-city#readme",
+  "homepage": "https://github.com/TGRstack/country-state-city#readme",
+  "maintainers": [
+    "Florian Mettetal <florian.mettetal@gmail.com>"
+  ],
+  "author": "harpreetkhalsagtbit@gmail.com",
   "devDependencies": {
     "husky": "^1.3.1",
     "jest": "^23.6.0"
+  },
+  "dependencies": {
   }
 }

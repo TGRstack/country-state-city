@@ -11,6 +11,11 @@ test('Check for State By Id ', () => {
   let state = csc.getStateById(code)
   expect(state).toEqual({"country_id": "101", "id": "32", "name": "Punjab"});
 });
+test('Check for State Title By Country Id ', () => {
+  const code = '230';
+  let title = csc.getStateTitleOfCountry(code)
+  expect(title).toEqual('County');
+});
 
 test('Check for City By Id ', () => {
   const code = '31439';
